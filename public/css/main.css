@@ -1,0 +1,97 @@
+@import 'nav.css';
+@import 'dropdown.css';
+
+
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-items {
+    position: absolute;
+    top: calc(100%);
+    background-color: white;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(0px);
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.dropdown-items > img {
+    max-width: 25vw;
+}
+
+.dropdown > .link:hover + .dropdown-items {
+    opacity: 1;
+    transform: translateY(-60vh);
+}
+
+.dropdown > .dropdown-items:hover {
+    opacity: 1;
+    transform: translateY(-60vh);
+}
+
+.midbar {
+    margin: 0;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 8;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.midbar > div > div > button > img {
+    width:25vw;
+    height:25vh;
+}
+
+
+
+#firstbox {
+    background-color: red;
+    height: 25vh;
+    width: 25vw;
+}
+
+
+#secondbox {
+    background-color: blue;
+    height: 25vh;
+    width: 25vw;
+}
+
+
+#thirdbox {
+    background-color: green;
+    height: 25vh;
+    width: 25vw;
+}
+
+
+#fourthbox {
+    background-color: black;
+    height: 25vh;
+    width: 25vw;
+}
+

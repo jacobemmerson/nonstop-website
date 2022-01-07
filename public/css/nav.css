@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    z-index: 9;
+}
+
+.nav {
+    padding: 10px 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}

@@ -1,0 +1,29 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown-items {
+    position: absolute;
+    top: calc(100%);
+    background-color: white;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(0px);
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+    .dropdown-items > img {
+        max-width: 25vw;
+    }
+
+.dropdown > .link:hover + .dropdown-items {
+    opacity: 1;
+    transform: translateY(-60vh);
+}
+
+.dropdown > .dropdown-items:hover {
+    opacity: 1;
+    transform: translateY(-60vh);
+}
